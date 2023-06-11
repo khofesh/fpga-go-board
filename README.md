@@ -26,6 +26,8 @@ sudo udevadm control --reload
 
 ## program the board
 
+--the diamond programmer is a pain the rear to work with on Linux--
+
 ```shell
 sudo dnf install icestorm
 iceprog nandland/nandland_Implmnt/sbt/outputs/bitmap/LED_Blink_Top_bitmap.bin
@@ -38,3 +40,4 @@ iceprog nandland/nandland_Implmnt/sbt/outputs/bitmap/LED_Blink_Top_bitmap.bin
 - https://nandland.com/
 - https://vhdlwhiz.com/lattice-icecube2-ubuntu-20-04-icestick/ (icecube2 on ubuntu)
 - https://www.alteeve.com/w/Changing_Ethernet_Device_Names_in_EL7_and_Fedora_15%2B
+- https://ghdl.github.io/ghdl/

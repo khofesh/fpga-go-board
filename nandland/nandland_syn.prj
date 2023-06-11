@@ -2,8 +2,10 @@
 #-- Project file /media/xfsfast/github/khofesh/fpga-go-board/nandland/nandland_syn.prj
 #project files
 
-add_file -verilog -lib work "../Project6/LED_Blink.v" 
-add_file -verilog -lib work "../Project6/LED_Blink_Top.v" 
+add_file -verilog -lib work "../Project8/Binary_To_7Segment.v" 
+add_file -verilog -lib work "../Project8/UART_Loopback_Top.v" 
+add_file -verilog -lib work "../Project8/UART_TX.v" 
+add_file -verilog -lib work "../Project8/UART_RX.v" 
 add_file -constraint -lib work "../Go_Board_Clock_Constraint.sdc"
 #implementation: "nandland_Implmnt"
 impl -add nandland_Implmnt -type fpga
