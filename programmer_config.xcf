@@ -17,12 +17,13 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>C:/Users/fahmi/OneDrive/Documents/fpga-go-board/Project1/Project1_Implmnt/sbt/outputs/bitmap/project_7_segment_top_bitmap.bin</File>
-			<FileTime>06/10/23 23:49:04</FileTime>
-			<JedecChecksum>0x3908</JedecChecksum>
+			<File>C:/Users/fahmi/OneDrive/Documents/fpga-go-board/Project1/Project1_Implmnt/sbt/outputs/bitmap/UART_RX_To_7_Seg_Top_bitmap.bin</File>
+			<FileTime>06/11/23 14:28:55</FileTime>
+			<JedecChecksum>0xFC96</JedecChecksum>
 			<Operation>SPI Flash Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
+				<SVFProcessor>SVF Processor</SVFProcessor>
 				<AccessMode>SPI Flash Programming</AccessMode>
 			</Option>
 			<FPGALoader>
@@ -46,6 +47,7 @@
 						<SVFVendor>JTAG STANDARD</SVFVendor>
 						<IOState>HighZ</IOState>
 						<IOVectorData>€ÂF</IOVectorData>
+						<SVFProcessor>SVF Processor</SVFProcessor>
 						<AccessMode>JTAG</AccessMode>
 					</Option>
 				</Device>
@@ -59,7 +61,7 @@
 					<IDCode>0x10</IDCode>
 					<Package>8-pin SOIC</Package>
 					<Operation>SPI Flash Erase,Program,Verify</Operation>
-					<File>C:/Users/fahmi/OneDrive/Documents/fpga-go-board/Project1/Project1_Implmnt/sbt/outputs/bitmap/project_7_segment_top_bitmap.bin</File>
+					<File>C:/Users/fahmi/OneDrive/Documents/fpga-go-board/Project1/Project1_Implmnt/sbt/outputs/bitmap/UART_RX_To_7_Seg_Top_bitmap.bin</File>
 					<AddressBase>0x00000000</AddressBase>
 					<EndAddress>0x00018000</EndAddress>
 					<DeviceSize>1</DeviceSize>
@@ -80,6 +82,7 @@
 					</LocalChainList>
 					<Option>
 						<SVFVendor>JTAG STANDARD</SVFVendor>
+						<SVFProcessor>SVF Processor</SVFProcessor>
 					</Option>
 				</Device>
 			</FPGADevice>

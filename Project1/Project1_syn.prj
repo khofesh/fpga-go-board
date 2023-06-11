@@ -2,9 +2,9 @@
 #-- Project file C:\Users\fahmi\OneDrive\Documents\fpga-go-board\Project1\Project1_syn.prj
 #project files
 
-add_file -verilog -lib work "../Project5/binary_to_7segment.v" 
-add_file -verilog -lib work "../Project5/debounce_switch.v" 
-add_file -verilog -lib work "../Project5/project_7_segment_top.v" 
+add_file -verilog -lib work "../Project7/UART_RX.v" 
+add_file -verilog -lib work "../Project7/UART_RX_To_7_Seg_Top.v" 
+add_file -verilog -lib work "../Project7/binary_to_7segment.v" 
 add_file -constraint -lib work "../Go_Board_Clock_Constraint.sdc"
 #implementation: "Project1_Implmnt"
 impl -add Project1_Implmnt -type fpga
