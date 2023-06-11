@@ -24,6 +24,13 @@ reload the new rules and reboot
 sudo udevadm control --reload
 ```
 
+## program the board
+
+```shell
+sudo dnf install icestorm
+iceprog nandland/nandland_Implmnt/sbt/outputs/bitmap/LED_Blink_Top_bitmap.bin
+```
+
 # references
 
 - https://halverscience.net/fpgas_for_sci_and_eng/hardware/
