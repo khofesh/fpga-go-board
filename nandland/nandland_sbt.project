@@ -1,41 +1,13 @@
-[Nandland_Project_Implmnt]
-DeviceFamily=iCE40
-Device=HX1K
-DevicePackage=VQ100
-DevicePower=
-NetlistFile=Nandland_Project_Implmnt/Nandland_Project.edf
-AdditionalEDIFFile=
-IPEDIFFile=
-DesignLib=Nandland_Project_Implmnt/sbt/netlist/oadb-LED_Blink_Top
-DesignView=_rt
-DesignCell=LED_Blink_Top
-SynthesisSDCFile=Nandland_Project_Implmnt/Nandland_Project.scf
-UserPinConstraintFile=
-UserSDCFile=
-PhysicalConstraintFile=
-BackendImplPathName=
-Devicevoltage=1.14
-DevicevoltagePerformance=+/-5%(datasheet default)
-DeviceTemperature=85
-TimingAnalysisBasedOn=Worst
-OperationRange=Commercial
-TypicalCustomTemperature=25
-WorstCustomTemperature=85
-BestCustomTemperature=0
-IOBankVoltages=topBank,3.3 bottomBank,3.3 leftBank,3.3 rightBank,3.3
-derValue=0.701346
-TimingPathNumberStick=0
-
 [Project]
 ProjectVersion=2.0
 Version=Lattice Semiconductor Corporation iCEcube - Release: 2020.12.27943 - Build Date: Dec 10 2020 18:03:29
-ProjectName=Nandland_Project
+ProjectName=nandland
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=../../Project6/LED_Blink.v,../../Project6/LED_Blink_Top.v
-ProjectCFiles=
-CurImplementation=Nandland_Project_Implmnt
-Implementations=Nandland_Project_Implmnt
+ProjectVFiles=../Project6/LED_Blink.v,../Project6/LED_Blink_Top.v
+ProjectCFiles=../Go_Board_Clock_Constraint.sdc
+CurImplementation=nandland_Implmnt
+Implementations=nandland_Implmnt
 StartFromSynthesis=yes
 IPGeneration=false
 
@@ -65,6 +37,34 @@ TopLevelUnit=
 UseIORegister=Auto
 VHDL2008=False
 VerilogIncludeSearchPath=
+
+[nandland_Implmnt]
+DeviceFamily=iCE40
+Device=HX1K
+DevicePackage=VQ100
+DevicePower=
+NetlistFile=nandland_Implmnt/nandland.edf
+AdditionalEDIFFile=
+IPEDIFFile=
+DesignLib=nandland_Implmnt/sbt/netlist/oadb-LED_Blink_Top
+DesignView=_rt
+DesignCell=LED_Blink_Top
+SynthesisSDCFile=nandland_Implmnt/nandland.scf
+UserPinConstraintFile=
+UserSDCFile=
+PhysicalConstraintFile=../Go_Board_Constraints.pcf
+BackendImplPathName=
+Devicevoltage=1.14
+DevicevoltagePerformance=+/-5%(datasheet default)
+DeviceTemperature=85
+TimingAnalysisBasedOn=Worst
+OperationRange=Commercial
+TypicalCustomTemperature=25
+WorstCustomTemperature=85
+BestCustomTemperature=0
+IOBankVoltages=topBank,3.3 bottomBank,3.3 leftBank,3.3 rightBank,3.3
+derValue=0.701346
+TimingPathNumberStick=0
 
 [tool options]
 PlacerEffortLevel=std

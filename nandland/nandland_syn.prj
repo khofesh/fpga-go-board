@@ -1,11 +1,12 @@
 #-- Synopsys, Inc.
-#-- Project file /media/xfsfast/github/khofesh/fpga-go-board/nandland/Nandland_Project/Nandland_Project_syn.prj
+#-- Project file /media/xfsfast/github/khofesh/fpga-go-board/nandland/nandland_syn.prj
 #project files
-add_file -verilog -lib work "../../Project6/LED_Blink.v"
-add_file -verilog -lib work "../../Project6/LED_Blink_Top.v"
 
-#implementation: "Nandland_Project_Implmnt"
-impl -add Nandland_Project_Implmnt -type fpga
+add_file -verilog -lib work "../Project6/LED_Blink.v" 
+add_file -verilog -lib work "../Project6/LED_Blink_Top.v" 
+add_file -constraint -lib work "../Go_Board_Clock_Constraint.sdc"
+#implementation: "nandland_Implmnt"
+impl -add nandland_Implmnt -type fpga
 
 #implementation attributes
 set_option -vlog_std v2001
@@ -51,7 +52,7 @@ set_option -write_apr_constraint 1
 
 #set result format/file last
 project -result_format "edif"
-project -result_file ./Nandland_Project_Implmnt/Nandland_Project.edf
-project -log_file "./Nandland_Project_Implmnt/Nandland_Project.srr"
-impl -active "Nandland_Project_Implmnt"
+project -result_file ./nandland_Implmnt/nandland.edf
+project -log_file "./nandland_Implmnt/nandland.srr"
+impl -active nandland_Implmnt
 project -run synthesis -clean
