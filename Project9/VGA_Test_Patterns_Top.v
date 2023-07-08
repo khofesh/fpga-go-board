@@ -60,7 +60,7 @@ module VGA_Test_Patterns_Top (
 
     // 25,000,000 / 115,200 = 217
     UART_RX #(.CLKS_PER_BIT(217)) UART_RX_Inst
-    (.iClock(i_Clk),
+    (.i_Clock(i_Clk),
     .i_RX_Serial(i_UART_RX),
     .o_RX_DV(w_RX_DV),
     .o_RX_Byte(w_RX_Byte));
