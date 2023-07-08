@@ -4,7 +4,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2020.12.27943 - Bui
 ProjectName=nandland
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=../Project8/Binary_To_7Segment.v=work,../Project8/UART_Loopback_Top.v=work,../Project8/UART_TX.v=work,../Project8/UART_RX.v=work
+ProjectVFiles=../Project9/VGA_Sync_Pulses.v,../Project9/VGA_Sync_Porch.v,../Project9/UART_TX.v,../Project9/UART_RX.v,../Project9/Test_Pattern_Gen.v,../Project9/Binary_To_7Segment.v,../Project9/VGA_Test_Patterns_Top.v
 ProjectCFiles=../Go_Board_Clock_Constraint.sdc
 CurImplementation=nandland_Implmnt
 Implementations=nandland_Implmnt
